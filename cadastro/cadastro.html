@@ -9,33 +9,54 @@
 
 	<title>Cadastro</title>
 </head>
-<body>
+<body ng-app="cadastro", ng-controller="CadastroController">
 
-	<header>
+	<form>
 
 		<div class="alinhamento">
 
 			<h1 id="cadastrese">Cadastre-se</h1>
 
-			 <p>Nome Completo: <input type="text" class="larguraAlgunsInputs" ><br><br></p>
-			 <p>Usúario: <input type="text" class="larguraAlgunsInputs"><br><br></p>
+			 <p>Nome Completo: <input type="text" class="larguraAlgunsInputs" ng-model="nomeCompleto" ><br><br></p>
+			 <p>Usúario: <input type="text" class="larguraAlgunsInputs" ng-model="usuario"><br><br></p>
 			 <p>Data de nascimento: <input type="date" class="larguraAlgunsInputs" ><br><br>
-			 Genêro Sexual: <input type="radio" name="gender" value="male" checked>Homem
-			<input type="radio" name="gender" value="female">Mulher
-			<input type="radio" name="gender" value="other">Outros	
-			<p>
-			 	Email: <input type="email" >
-			 	Confirme Email: <input type="email"><br><br></p>
-			 <p>Senha: <input type="text" >
-				Confirme a Senha: <input type="text"><br><br></p>
+			 Genêro Sexual: <input type="radio" name="gender" value="male" >Homem
+			<input type="radio" name="gender" value="female" >Mulher
+			<input type="radio" name="gender" value="other" >Outros	
+			<p><br>
+			 	Email: <input type="email" ng-model="email" >
+			 	Confirme Email: <input type="email" ng-model="confirmeEmail"><br><br></p>
+			 <p>Senha: <input type="text" ng-model="senha" >
+				Confirme a Senha: <input type="text" ng-model="confirmeSenha"><br><br></p><br>
 			 
 			 
-			<input class="center-block" type="button" value="Cadastrar-se" onclick="alert('Feito Cadastro')">
+			<input class="center-block" type="button" value="Cadastrar-se" ng-click="verificar(nomeCompleto, usuario, email, confirmeEmail, senha, confirmeSenha)">
 			
 
 		</div>
 
-	</header>
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+	<script>
+
+		const app = angular.module('cadastro', []);
+
+		app.controller('CadastroController', ($scope) => {
+
+			$scope.verificar = (nomeCompleto, usuario, email, confirmeEmail, senha, confirmeSenha) =>{
+				if((nomeCompleto != null) && (usuario != null) && (email != null) && (confirmeEmail != null) && (senha != null) && (confirmeSenha != null)){
+					
+					console.log('ok');
+				}else{
+					$scope.alerta = alert('Todos os campos devem ser preenchidos');
+				} 
+			}
+
+        });
+
+	</script>
 
 </body>
 </html>

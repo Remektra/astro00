@@ -1,4 +1,3 @@
-
 body{
 	font-family: 'Fjalla One', sans-serif;
 }
@@ -14,6 +13,18 @@ body{
 	color: white;
 
 }*/
+
+.textoinicio{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    top: 128px;
+    z-index: 10000;
+    color: white;
+    text-align: center;
+	margin-top: 150px;
+}
 
 label{
 	color: white;
@@ -36,7 +47,7 @@ div.formulario.col-sm-4 {
 }
 
 section#carrosel {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 label.form-check-label{
@@ -47,9 +58,14 @@ label.form-check-label{
 	background-color: rgba(128,128,128, 0.9) !important;
 }
 
+/*#videos{
+	display: flex;
+
+}*/
+
 .imagens{
-	/*padding-top: 5%;*/
-	/*margin-bottom: 5%;*/
+	padding-top: 5%;
+	margin-bottom: 5%;
 }
 
 .primeira{
@@ -92,6 +108,10 @@ label.form-check-label{
 	margin-left: 5%;
 }
 
+.row{
+	margin-right: 20px;
+}
+
 #titulo-fomulario{
 	color: white;
 }
@@ -100,10 +120,15 @@ label.form-check-label{
 	color: white;
 	text-align: center;
 }
-
 .btn1{
 	margin-left: 10px;
 }
+
+.textoinicio{
+
+}
+
+@media (max-width: 600px){};
 
 /*.teste{
 	margin-right: 0;
