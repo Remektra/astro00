@@ -1,136 +1,150 @@
-body{
-	font-family: 'Fjalla One', sans-serif;
+*{
+    margin: 0;
 }
 
-/*header{
-	background-size: 100% ;
-	background-repeat: no-repeat;
-	background-position: center top;
-	width: 100%;
-	text-align: center;
-	padding: 25%;
-	font-weight: bold;
-	color: white;
+/* tag's */
 
-}*/
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 70%
+}
 
-.textoinicio{
-	position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 42px;
-    top: 128px;
-    z-index: 10000;
+li{
+    margin-left: 10px;
+}
+
+li a {
+    display: block;
     color: white;
     text-align: center;
-	margin-top: 150px;
+    padding: 7px 11px;
+    text-decoration: none;
 }
 
-label{
-	color: white;
+li a:hover {
+    background-color: #111;
 }
 
-footer{
-	background-image: url('../img/footer01.jpg');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center top;
-}
+a{
+    text-decoration: none;
+    color: black;
+}   
 
-form{
-	padding-left: 25px;
-}
-
-div.formulario.col-sm-4 {
-	padding-top: 10%;
-	padding-left: 2%;
-}
-
-section#carrosel {
-	margin-top: 0px;
-}
-
-label.form-check-label{
-	color: #aaa;
-}
-
-.navbar{
-	background-color: rgba(128,128,128, 0.9) !important;
-}
-
-/*#videos{
-	display: flex;
-
-}*/
-
-.imagens{
-	padding-top: 5%;
-	margin-bottom: 5%;
-}
-
-.primeira{
-	background-image: url("../img/primeira.png");
-	background-size: 100%;
-	width: 100%;
-	height: 600px;
-	margin-top: 50px;
-	padding-top: 10%;
-	background-repeat: no-repeat;
+section{
+    padding-top: 5%;
+    width: 100%;
+    height: 600px;
 }
 
 
-.nome{
-	padding-top: 100%;
-	text-align: center;
+h5{
+    text-align: center;
+    margin-top: 10px;
 }
 
-.segunda{
-	background-image: url("../img/segunda.png");
-	background-size: 100%;
-	width: 100%;
-	height: 600px;
-	margin-top: 50px;
-	padding-top: 10%;
-	margin-bottom: 3%;
+/* classes */
+
+.cabecalho{
+        padding-top: 15px;
+        width: 100%;
+        height: 40px;
+        background-color: #2B3041;
+        position: fixed;
+        
 }
 
-.terceira{
-	padding-top: 1%;
-	display: flex;
-
-}
-
-.vds{
-	margin-left: 10%;
-}
-
-.vds1{
-	margin-left: 5%;
-}
-
-.row{
-	margin-right: 20px;
-}
-
-#titulo-fomulario{
-	color: white;
-}
-
-#titulo-localizacao{
-	color: white;
-	text-align: center;
-}
-.btn1{
-	margin-left: 10px;
-}
-
-.textoinicio{
+.card1{
+    float: left;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: solid #bfd4cc5c;
+    width: 25%;
+    height: 400px;
+    background-color: #bfd4cc5c;
+    box-shadow: 5px 5px #9999;
 
 }
 
-@media (max-width: 600px){};
-
-/*.teste{
-	margin-right: 0;
+.curiosidade1{
+    margin-left: 5%;
+    margin-top: 8%;
 }
-*/
+
+.logo{
+    margin-left: 50%;
+}
+
+.btnCuriosidades{
+    color: white;
+    border: solid #2B3041;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 75%;
+    width: 20%;
+    height: 50px;
+    background-color: #2B3041;
+    
+}
+
+.btnCuriosidades:hover{
+    background-color: #111;    
+}
+
+.login{
+    color: aqua;
+    width: 100%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+.localizacao{
+    padding-left: 20px;
+}
+
+
+/* id's */
+
+#sessao2{
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/fundoGeral3.jpg');
+    width: 100%;
+    height:100vh;
+}
+
+#sessao3{
+    display: flex;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+    background-image: url('../img/fundoGeral2.jpg');
+    width: 100%;
+    height:100vh;
+}
+
+#cartao0{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#cartao1{
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+
+#cartao2{
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+
+#textoS3{
+    color: white;
+    margin-left: 40%;
+}
+
+
+

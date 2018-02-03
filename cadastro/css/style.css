@@ -4,6 +4,7 @@
 }
 
 form{
+    padding-right: 50px;
     background: url('../img/fundo.png') no-repeat;
     background-size: 100%;
     width: 100%;
@@ -19,17 +20,21 @@ p{
 /* Classes */
 
 .alinhamento{
+    padding: 50px 50px 50px 50px;
+    background: rgba(0, 0,0, 0.5);
+    width: 50%;
+    height: 500px;
     margin-left: 50%;
-    margin-top: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
 }
 
-.center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 .larguraAlgunsInputs{
     width: 95%;
+}
+
+.botao{
+    margin-left: 40%;
 }
 
 /* Id's */

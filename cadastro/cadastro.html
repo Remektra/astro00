@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<!-- Caso queira arrumar o alinhamento dos inputs utilziar a class das grids do bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<title>Cadastro</title>
@@ -17,20 +20,21 @@
 
 			<h1 id="cadastrese">Cadastre-se</h1>
 
-			 <p>Nome Completo: <input type="text" class="larguraAlgunsInputs" ng-model="nomeCompleto" ><br><br></p>
-			 <p>Usúario: <input type="text" class="larguraAlgunsInputs" ng-model="usuario"><br><br></p>
-			 <p>Data de nascimento: <input type="date" class="larguraAlgunsInputs" ><br><br>
+			 <p>Nome Completo: <input type="text" class="larguraAlgunsInputs" ng-model="nomeCompleto" ></p>
+			 <p>Usúario: <input type="text" class="larguraAlgunsInputs" ng-model="usuario"></p>
+			 <p>Data de nascimento: <input type="date" class="larguraAlgunsInputs" >
 			 Genêro Sexual: <input type="radio" name="gender" value="male" >Homem
 			<input type="radio" name="gender" value="female" >Mulher
 			<input type="radio" name="gender" value="other" >Outros	
-			<p><br>
-			 	Email: <input type="email" ng-model="email" >
-			 	Confirme Email: <input type="email" ng-model="confirmeEmail"><br><br></p>
-			 <p>Senha: <input type="text" ng-model="senha" >
-				Confirme a Senha: <input type="text" ng-model="confirmeSenha"><br><br></p><br>
+			<p>	
+			 	Email: <input type="email" class="larguraAlgunsInputs" ng-model="email" >
+			 	<!-- Confirme Email: <input type="email" ng-model="confirmeEmail"></p> -->
+			 <p>Senha: <input type="text" class="larguraAlgunsInputs" ng-model="senha" >
+
+				<!-- Confirme a Senha: <input type="text" ng-model="confirmeSenha"></p> -->
 			 
 			 
-			<input class="center-block" type="button" value="Cadastrar-se" ng-click="verificar(nomeCompleto, usuario, email, confirmeEmail, senha, confirmeSenha)">
+			<input class="botao" type="button" value="Cadastrar-se" ng-click="verificar(nomeCompleto, usuario, email, senha)">
 			
 
 		</div>
@@ -45,8 +49,8 @@
 
 		app.controller('CadastroController', ($scope) => {
 
-			$scope.verificar = (nomeCompleto, usuario, email, confirmeEmail, senha, confirmeSenha) =>{
-				if((nomeCompleto != null) && (usuario != null) && (email != null) && (confirmeEmail != null) && (senha != null) && (confirmeSenha != null)){
+			$scope.verificar = (nomeCompleto, usuario, email, senha) =>{
+				if((nomeCompleto == '') && (usuario == '') && (email == '') && (senha == '')){
 					
 					console.log('ok');
 				}else{
